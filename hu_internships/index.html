@@ -1,0 +1,193 @@
+<!-- ตกแต่งหน้าเข้าสู่ระบบ -->
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Internships System</title>
+
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff, #e0f2fe);
+            padding: 24px;
+        }
+
+        .login-wrapper {
+            width: 100%;
+            max-width: 960px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            background: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .login-left {
+            padding: 48px;
+            background: linear-gradient(160deg, #4b4e58, #f02626);
+            color: #ffffff;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-bottom: 18px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.14);
+            font-size: 14px;
+        }
+
+        .login-left h1 {
+            margin: 0 0 14px;
+            font-size: 36px;
+        }
+
+        .login-left p {
+            font-size: 15px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .feature-list {
+            margin-top: 20px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+        }
+
+        .login-right {
+            padding: 42px 34px;
+        }
+
+        .login-right h2 {
+            margin-bottom: 5px;
+        }
+
+        .subtext {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            border: none;
+            background: #eb2525;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .alert {
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .alert.error {
+            background: #ffe5e5;
+            color: red;
+        }
+
+        .extra-links {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        @media (max-width: 860px) {
+            .login-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-wrapper">
+
+    <!-- LEFT -->
+    <div class="login-left">
+        <div class="badge">Information Studies Program</div>
+        <h1>Internships Management System</h1>
+
+        <p>
+                                                                           
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+              ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+              ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀ ระบบสำหรับนิสิตใช้ยื่นคำขอฝึกงาน และสำหรับอาจารย์หรือเจ้าหน้าที่ใช้ตรวจสอบข้อมูล
+            ติดตามสถานะ และจัดการเอกสารได้อย่างสะดวก
+        </p>
+
+       
+        
+    </div>
+
+    <!-- RIGHT -->
+    <div class="login-right">
+        <h2>เข้าสู่ระบบ</h2>
+        <p class="subtext">กรอกชื่อผู้ใช้และรหัสผ่านเพื่อเข้าใช้งานระบบ</p>
+
+       <!-- ALERT MESSAGE (JS VERSION) -->
+        <div id="alertBox" class="alert error" style="display:none;"></div>
+
+        <!--  BACKEND FORM (คงของเดิม) -->
+        <form method="POST" action="login.php">
+
+            <div class="form-group">
+                <label for="uname">ชื่อผู้ใช้</label>
+                <input type="text" id="uname" name="uname" placeholder="กรอกชื่อผู้ใช้" required>
+            </div>
+
+            <div class="form-group">
+                <label for="psw">รหัสผ่าน</label>
+                <input type="password" id="psw" name="psw" placeholder="กรอกรหัสผ่าน" required>
+            </div>
+
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+
+        <div class="extra-links">
+            ยังไม่มีบัญชีใช่ไหม? <a href="./student/regislogin.php">สมัครสมาชิกที่นี่</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
