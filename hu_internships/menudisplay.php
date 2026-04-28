@@ -94,6 +94,7 @@ $result = $connect->query($sql);
             text-align: center;
             color: #333;
         }
+        
     </style>
 </head>
 <body>
@@ -183,40 +184,90 @@ $result = $connect->query($sql);
         </div>
     </div>
 
-    <div id="students" class="mt-5 pt-4">
-        <h3 class="section-title">ข้อมูลนิสิตรายปี</h3>
-        <div class="row g-3">
-            <div class="col-md-3">
-                <div class="card-modern text-center">
-                    <h5 class="fw-bold text-danger">ปี 1</h5>
-                    <p class="small">ปรับพื้นฐานทั้งด้านการเรียนความรู้เบื้องต้นเกี่ยวกับสารสนเทศ เช่น
-                     การใช้เทคโนโลยี การสื่อสาร และแนวคิดพื้นฐานของการจัดการข้อมูล </p>
+   <div id="students" class="mt-5 pt-4">
+    <h3 class="section-title text-center mb-4">รายชื่ออาจารย์</h3>
+
+    <div class="row g-4">
+
+        <!-- การ์ด 1 -->
+        <div class="col-md-3">
+            <div class="card-modern p-3 h-100">
+                <h5 class="fw-bold text-danger text-center mb-3">กรรมการหลักสูตร</h5>
+
+                <div class="mb-3">
+                    <strong>อาจารย์ ดร. ดิษฐ์ สุทธิวงศ์</strong><br>
+                    <small>(ประธานกรรมการบริหารหลักสูตร)</small><br>
+                    <span class="text-muted">Lecturer Dit Suthiwong, Ph.D.</span><br>
+                    <small>Email: dit@g.swu.ac.th</small>
+                </div>
+
+                <div>
+                    <strong>อาจารย์ ดร. ฐิติ อติชาติชยากร</strong><br>
+                    <small>(เลขานุการหลักสูตร)</small><br>
+                    <span class="text-muted">Lecturer Thiti Atichartchayakorn, Ph.D.</span><br>
+                    <small>Email: thitik@g.swu.ac.th</small>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card-modern text-center">
-                    <h5 class="fw-bold text-danger">ปี 2</h5>
-                    <p class="small">เริ่มศึกษาเนื้อหาสาขาสารสนเทศโดยตรง เช่น การจัดการฐานข้อมูล ระบบสารสนเทศ 
-                    และการใช้เทคโนโลยีในการจัดเก็บและค้นหาข้อมูล </p>
+        </div>
+
+        <!-- การ์ด 2 -->
+        <div class="col-md-3">
+            <div class="card-modern p-3 h-100">
+                <h5 class="fw-bold text-danger text-center mb-3">กรรมการหลักสูตร</h5>
+
+                <div class="mb-3">
+                    <strong>ผู้ช่วยศาสตราจารย์ ดร. วิภากร วัฒนสินธุ์</strong><br>
+                    <span class="text-muted">Assistant Professor Vipakorn Vadhanasin, Ph.D., PMP, FHEA</span><br>
+                    <small>Email: vipakorn@g.swu.ac.th</small>
+                </div>
+
+                <div class="mb-3">
+                    <strong>อาจารย์ ดร. โชคธำรงค์ จงจอหอ</strong><br>
+                    <span class="text-muted">Lecturer Chokthamrong Chongchorhor, Ph.D.</span><br>
+                    <small>Email: chokthamrong@g.swu.ac.th</small>
+                </div>
+
+                <div>
+                    <strong>อาจารย์โชติมา วัฒนะ</strong><br>
+                    <span class="text-muted">Lecturer Chotima Watana</span><br>
+                    <small>Email: chotimaw@g.swu.ac.th</small>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card-modern text-center">
-                    <h5 class="fw-bold text-danger">ปี 3</h5>
-                    <p class="small">การออกแบบและพัฒนาระบบสารสนเทศ 
-                    รวมถึงการทำโครงงานและการประยุกต์ใช้ความรู้ในการแก้ปัญหา เตรียมความพร้อมสำหรับการฝึกงาน</p>
+        </div>
+
+        <!-- การ์ด 3 -->
+        <div class="col-md-3">
+            <div class="card-modern p-3 h-100">
+                <h5 class="fw-bold text-danger text-center mb-3">อาจารย์ผู้สอน</h5>
+
+                <div class="mb-3">
+                    <strong>ผู้ช่วยศาสตราจารย์ ดร. ดุษฎี สีวังคำ</strong><br>
+                    <span class="text-muted">Assistant Professor Dussadee Seewungkum, Ph.D.</span><br>
+                    <small>Email: dussadee@g.swu.ac.th</small>
+                </div>
+
+                <div>
+                    <strong>ผู้ช่วยศาสตราจารย์ ดร. ศศิพิมล ประพินพงศกร</strong><br>
+                    <span class="text-muted">Assistant Professor Sasipimol Prapinpongsakorn, Ph.D., FHEA</span><br>
+                    <small>Email: sasipimol@g.swu.ac.th</small>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card-modern text-center">
-                    <h5 class="fw-bold text-danger">ปี 4</h5>
-                    <p class="small">เน้นการนำความรู้ไปใช้ในสถานการณ์จริง ผ่านการฝึกงานหรือโครงการวิจัย
-                     เพื่อเตรียมความพร้อมสำหรับการทำงานในอนาคต</p>
+        </div>
+
+        <!-- การ์ด 4 -->
+        <div class="col-md-3">
+            <div class="card-modern p-3 h-100">
+                <h5 class="fw-bold text-danger text-center mb-3">อาจารย์ผู้สอน</h5>
+
+                <div>
+                    <strong>อาจารย์ ดร. ศุมรรษตรา แสนวา</strong><br>
+                    <span class="text-muted">Lecturer Sumattra Saenwa, Ph.D., FHEA</span><br>
+                    <small>Email: sumattra@g.swu.ac.th</small>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
     <?php 
     if ($_SESSION["username"] === "student" ) {
 
@@ -225,15 +276,6 @@ $result = $connect->query($sql);
     echo "<p class='text-muted mb-4'>นิสิตสามารถส่งคำขอฝึกงานผ่านระบบออนไลน์ได้ทันที</p>";
     echo "<a href='./student/register.php' class='btn-main'>";
     echo " <i class='bi bi-file-earmark-text me-2'></i>ยื่นคำขอฝึกงาน </a>";
-
-    // <div id="internships" class="text-center mt-5 mb-5 p-5 bg-white rounded-4 shadow-sm">
-    //     <h3 class="fw-bold mb-3">ต้องการยื่นเรื่องฝึกงาน?</h3>
-    //     <p class="text-muted mb-4">นิสิตสามารถส่งคำขอฝึกงานผ่านระบบออนไลน์ได้ทันที</p>
-    //     <a href="./student/register.php" class="btn-main">
-    //         <i class="bi bi-file-earmark-text me-2"></i>ยื่นคำขอฝึกงาน
-    //     </a>
-    // </div>
-   
    }
    ?>
     <p>
